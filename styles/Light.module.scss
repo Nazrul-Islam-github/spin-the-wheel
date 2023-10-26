@@ -1,0 +1,219 @@
+.lightNav {
+  background-color: var(--bs-ligth);
+  .LogoText {
+    color: var(--bs-dark) !important;
+  }
+  .Logo {
+    color: var(--bs-dark);
+  }
+
+  .NavLi > a:hover {
+    background-color: var(--bs-tomato2);
+
+    color: var(--bs-light);
+  }
+
+  .NavLi > a {
+    color: var(--bs-dark);
+  }
+}
+
+// ---input
+.lightInput {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+}
+
+.imageContentDiv {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  h1,
+  h2,
+  h3 {
+    color: var(--bs-dark);
+  }
+
+  .ParaDiv {
+    p {
+      color: var(--bs-dark);
+    }
+  }
+}
+
+.Left {
+  padding: 20px;
+  // display: flex;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  width: 1150px;
+  margin: 20px auto;
+  @media screen and (max-width: 1155px) {
+    width: 95%;
+  }
+  h3,
+  h2,
+  h4,
+  h5,
+  h6 {
+    font-size: 30px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--bs-gray-800);
+    // text-align: center;
+    @media screen and (max-width: 590px) {
+      font-size: 22px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    // width:900px;
+    padding: 8px;
+    line-height: 26px;
+    color: var(--bs-gray-900);
+  }
+
+  ul ,ol{
+    li {
+      margin: 7px 0;
+      font-size: 17px;
+      line-height: 25px;
+      b {
+        margin-right: 6px;
+        font-size: 18px;
+        color: var(--bs-gray-800);
+      }
+    }
+  }
+}
+
+// --------------footer--------------
+.Footer {
+  // min-height: 150px;
+  margin-top: 19px;
+
+  border-top: 0.2px solid var(--bs-gray-200);
+
+  background-color: var(--bs-gray-100);
+
+  .Logo {
+    span {
+      font-size: 30px;
+    }
+
+    // border: 1px solid red;
+    p {
+      display: block;
+    }
+  }
+}
+.Copy {
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+}
+.Card {
+  li {
+    a {
+      color: var(--bs-gray-600);
+      &:hover {
+        background-color: var(--bs-gray-200);
+      }
+    }
+  }
+}
+
+// -------faqs
+.container {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+  color: #212529;
+  svg {
+    fill: var(--bs-gray-700);
+  }
+}
+.heading {
+  color: var(--bs-gray-800);
+}
+.single {
+  .SingleF {
+    border-bottom: 1px solid var(--bs-gray-200);
+  }
+}
+
+.question {
+  // border: 1px solid var(--bs-gray-500);
+
+  color: var(--bs-gray-700);
+}
+
+.ans {
+  background-color: var(--bs-gray-100);
+}
+
+// -----side bar
+.Sidebar {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.Close svg {
+  transition: all 0.3s ease-in-out;
+}
+.Close svg:hover {
+  fill: var(--bs-tomato2);
+}
+
+.SidebarLi a {
+  color: #000;
+}
+
+.SidebarLi > a:hover {
+  background-color: var(--bs-tomato2);
+
+  color: var(--bs-light);
+}
+
+.Continent {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  span {
+    margin: 4px 7px;
+    font-weight: 500;
+  }
+  button {
+    --b: 3px; /* border thickness */
+    --s: 0.15em; /* size of the corner */
+    --c: var(--bs-dark);
+
+    padding: calc(0.05em + var(--s)) calc(0.3em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background: conic-gradient(
+        from 90deg at var(--b) var(--b),
+        #0000 90deg,
+        var(--c) 0
+      )
+      var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+      calc(100% - var(--b) - 2 * var(--_p));
+    transition: 0.3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: 0.2em;
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border: none;
+    margin: 8px;
+
+    &:hover,
+    &:focus-visible {
+      --_p: 0px;
+      outline-color: var(--c);
+      outline-offset: 0.05em;
+    }
+    &:active {
+      background: var(--c);
+      color: #fff;
+    }
+  }
+}

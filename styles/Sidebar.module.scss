@@ -1,0 +1,79 @@
+.Sidebar {
+    // background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+position:fixed;
+    top:0%;
+    left: 0%;
+    transition: all .3s ease-in-out;
+    width: 350px;
+    min-height: 100vh;
+    z-index: 12;
+    
+}
+
+.Close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.Close svg{
+    transition: all 0.3s ease-in-out;
+}
+.Close svg:hover {
+    // fill: var(--bs-tomato2);
+}
+
+.SidebarUl {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* background-color: ; */
+}
+
+.SidebarLi {
+    margin: 10px 0px;
+}
+
+.SidebarLi a {
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    padding: 5px;
+    position: relative;
+    border-radius: 3px;
+    // color: #000;
+}
+
+.SidebarLi>a:hover {
+    // background-color: var(--bs-tomato2);
+
+  
+//   color: var(--bs-light);
+}
+
+
+
+.Logo {
+    // position: absolute;
+    // border: 2px solid red;
+    // width: 40%;
+    margin-top: 20px;
+    color: var(--h1-color);
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //  border: 2px solid #ff0062;
+    padding: 5px;
+h2{
+    color: var(--bs-tomato2);
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+img{
+    width: 55px;
+    margin-right: 5px;
+}
+}

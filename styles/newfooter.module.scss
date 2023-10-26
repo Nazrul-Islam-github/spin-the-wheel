@@ -1,0 +1,86 @@
+.Footer {
+  // min-height: 150px;
+  margin-top: 19px;
+
+  .Main {
+    width: 1150px;
+    margin: 0px auto;
+// border: 1px solid var(--bs-dark);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1150px) {
+      width: 100%;
+      margin: 5px auto;
+    }
+  }
+
+  .Logo {
+    
+    span {
+      font-size: 30px;
+      @media screen and (max-width:450px) {
+        font-size: 24px;
+        
+      }
+    }
+    width: 30%;
+    padding-top: 25px;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: 1px solid red;
+    p {
+      display: block;
+    }
+    @media screen and (max-width: 650px) {
+      width: 100%;
+      padding-left: 27px;
+    }
+  }
+}
+.Copy {
+
+  padding: 10px;
+  text-align: right;
+}
+.Card {
+  // background-color: aqua;
+  // width: 250px;
+
+  padding: 20px;
+  span {
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bolder;
+    padding-left: 10px;
+    // text-align: center;
+    // color: var(--bs-blue);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    a{
+display: inline-block;
+    margin: 5px 0;
+    cursor: pointer;
+    // text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 15px;
+
+
+    }
+ 
+  }
+}
+
+.EE {
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
+}

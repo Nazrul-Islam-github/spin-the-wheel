@@ -1,0 +1,283 @@
+.Main {
+  width: 1150px;
+  min-height: 500px;
+  // border:2px solid yellow;
+
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media screen and (max-width: 1155px) {
+    width: 95%;
+  }
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  .Aside {
+    width: 28%;
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      margin: 10px auto;
+    }
+  }
+}
+
+.Hero1 {
+  width: 68%;
+  // border: 4px solid var(--bs-tomato2);
+  // display: flex;
+  padding: 8px;
+  // justify-content: center;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+.Hero2 {
+  // width: 68%;
+  // border: 4px solid var(--bs-tomato2);
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  @media screen and (max-width: 800px) {
+    // width: 100%;
+    margin: 10px auto;
+  }
+}
+
+.CanvasDiv {
+  width: 500px;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  .Canvas {
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 50%;
+    // rotate: 90deg;
+    // background-color: var(--light-red);
+  }
+
+  @media screen and (max-width: 510px) {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+  }
+
+  .Spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // right: -50px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    @media screen and (max-width:450px) {
+      font-size: 14px;
+    }
+  }
+}
+
+#shave {
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  right: -6px;
+  // border: 2px solid red;
+  transform: translateY(-50%);
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.Alert {
+  // width: 100px !important;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: rgba($color: #fff, $alpha: 0.5) !important;
+  backdrop-filter: blur(13px);
+  border-radius: 5px;
+  overflow: hidden;
+  @media screen and (max-width: 500px) {
+    width: 95% !important;
+  }
+
+  img{
+    width: 200px;
+    display: block;
+  }
+}
+
+.Content {
+  h1,
+  h2 {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    color: var(--bs-dark);
+    @media screen and (max-width: 450px) {
+      font-size: 25px;
+      line-height: 29px;
+    }
+  }
+}
+
+.Btns {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+  button {
+    margin: 0 8px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    font-family: "Josefin Sans", sans-serif;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    &:nth-child(2) {
+      background-color: var(--bs-tomato2);
+      color: var(--bs-light);
+    }
+  }
+}
+
+.MaxWidth {
+  max-width: 1150px;
+  // border: 2px solid red;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 1155px) {
+    width: 95%;
+    justify-content: center;
+  }
+}
+.ContentDiv {
+  // background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  width: 100%;
+  min-height: 400px;
+  padding: 10px;
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    font-size: 40px;
+    // color: var(--bs-dark);
+    font-family: "Josefin Sans", sans-serif;
+
+    @media screen and (max-width: 510px) {
+      font-size: 25px;
+      line-height: 29px;
+    }
+  }
+  .ImgDiv {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 280px;
+      @media screen and (max-width: 450px) {
+        width: 75%;
+      }
+    }
+  }
+
+  .ParaDiv {
+    width: 600px;
+    p {
+      font-size: 20px;
+      line-height: 29px;
+    }
+    @media screen and (max-width: 610px) {
+      width: 95%;
+    }
+  }
+}
+
+.Left {
+  padding: 20px;
+  // display: flex;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  width: 1150px;
+  margin: 20px auto;
+  @media screen and (max-width: 1155px) {
+    width: 95%;
+  }
+  h3,
+  h2,
+  h4,
+  h5,
+  h6 {
+    font-size: 30px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--bs-gray-800);
+    // text-align: center;
+    @media screen and (max-width: 590px) {
+      font-size: 22px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    // width:900px;
+    padding: 8px;
+    line-height: 26px;
+    color: var(--bs-gray-900);
+  }
+
+  ul {
+    li {
+      margin: 7px 0;
+      font-size: 17px;
+      line-height: 25px;
+      b {
+        margin-right: 6px;
+        font-size: 18px;
+        color: var(--bs-gray-800);
+      }
+    }
+  }
+}
+
+
+#MODALwidth{
+  width: 600px;
+  // min-height: 300px;
+  @media screen and (max-width:610px) {
+    width: 95%;
+  }
+}
+
+.Setting{
+  svg{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover{
+      rotate: 180deg;
+        }
+  }
+}

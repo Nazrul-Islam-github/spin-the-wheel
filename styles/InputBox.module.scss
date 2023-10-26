@@ -1,0 +1,113 @@
+.Container{
+    // border: 3px solid blue;
+    border-radius: 8px;
+    min-height: 300px;
+    padding: 8px;
+    .form{
+        margin: 10px 0;
+        // border:2px solid gray;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 2px dashed var(--bs-gray-600);
+        input{
+            width: 250px;
+            height: 35px;
+            outline: none;
+            padding: 4px 8px;
+            font-size: 18px;
+            color: var(--bs-gray-600);
+            letter-spacing: 1px;
+            font-family: "Josefin Sans", sans-serif;
+
+            @media screen and (max-width:921px) {
+                width: 75%;
+            }
+        }
+
+        button{
+
+            margin-left: 4px;
+            width: 50px;
+            height: 35px;
+            cursor: pointer;
+            background-color: var(--bs-teal);
+            border: none;
+            outline: none;
+            @media screen and (max-width:921px) {
+                width: 25%;
+            }
+    
+            svg{
+                width: 30px;
+                height: 30px;
+                fill: var(--bs-light);
+            }
+        }
+    }
+}
+
+
+.Item{
+    // border: 2px solid #fff;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    input{
+        width: 250px;
+        height: 35px;
+        outline: none;
+        padding: 4px 8px;
+        font-size: 18px;
+        color: var(--bs-gray-600);
+        letter-spacing: 1px;
+        font-family: "Josefin Sans", sans-serif;
+
+        @media screen and (max-width:921px) {
+            width: 75%;
+        }
+    }
+
+    button{
+
+        margin-left: 4px;
+        width: 50px;
+        height: 35px;
+        cursor: pointer;
+        background-color: var(--bs-danger);
+        border: none;
+        outline: none;
+        @media screen and (max-width:921px) {
+            width: 25%;
+        }
+
+        svg{
+            width: 30px;
+            height: 30px;
+            fill: var(--bs-light);
+        }
+    }
+}
+
+.Suffle{
+    border: none;
+    margin: 8px 0;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: var( --bs-tomato);
+    color: var(--bs-light);
+    svg{
+        fill:  var(--bs-light);
+    }
+}
+
+.Sort{
+    width: 60px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    margin: 8px;  
+    background-color: var(--bs-blue);
+    fill:  var(--bs-light);
+}
