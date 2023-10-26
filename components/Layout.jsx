@@ -97,7 +97,7 @@ else{
         <meta name="language" content="English" />
         <meta name="author" content="spin the wheel" />
         <meta charset="UTF-8"/>
-       
+        <meta name="google-site-verification" content="TYzL-ZSfLMyLkRpO0sN-Y8HX_ZLhpAZ3TBVUqr_nato" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="distribution" content="Global"/>
         <meta property="og:type" content="website"/>
