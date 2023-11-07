@@ -2,7 +2,7 @@
 import { useState, useEffect,useContext } from "react";
 import Style from "../styles/Layout.module.scss";
 import Head from "next/head";
-import * as gtag from "../lib/gtag";
+
 import { useRouter } from "next/router";
 import NewFooter from "./Footer/NewFooter"
 import ReactConfetti from "react-confetti";
@@ -71,15 +71,8 @@ else{
 
   // ------------google analytics code
 
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      gtag.pageview(url);
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
+
+
   //-------------- google analytics code end
 
 

@@ -1,0 +1,404 @@
+.MainContainer {
+  min-height: 600px;
+  width: 1150px;
+  margin: 5px auto;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1150px) {
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  @media screen and (max-width: 758px) {
+    flex-direction: column;
+  }
+
+  .Hero {
+    min-height: 600px;
+    width: 64%;
+    margin-right: 4px;
+    @media screen and (max-width: 758px) {
+      width: 99%;
+      margin: 5px auto;
+    }
+  }
+  .Aside {
+    width: 35%;
+    min-height: 600px;
+    @media screen and (max-width: 758px) {
+      width: 95%;
+      margin: 5px auto;
+    }
+  }
+}
+
+.HeadContent {
+  h1,
+  h2 {
+    font-family: "McLaren", cursive, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: var(--bs-primary);
+    @media screen and (max-width: 450px) {
+      font-size: 1.5rem;
+    }
+  }
+  p {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0;
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--bs-gray-900);
+    @media screen and (max-width: 450px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.TextInput {
+  width: 100%;
+  height: 160px;
+  background-color: var(--bs-gray-900);
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  border-radius: 8px;
+  position: sticky;
+  top: 10px;
+  left: 0;
+  z-index: 10;
+  svg {
+    position: absolute;
+    top: 19px;
+    left: 60px;
+    fill: var(--bs-gray-800);
+    @media screen and (max-width: 534px) {
+      left: 38px;
+    }
+  }
+
+  .TextArea {
+    outline: none;
+    border: none;
+    max-width: 90%;
+    max-height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-width: 90%;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    padding-left: 44px;
+    color: var(--bs-gray-800);
+    @media screen and (max-width: 550px) {
+      font-size: 16px;
+    }
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-track {
+      // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #f90;
+      cursor: pointer;
+      background-image: -webkit-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+      );
+    }
+  }
+  button {
+    position: absolute;
+    display: inline-block;
+    bottom: 3px;
+    right: 35px;
+    width: 100px;
+    height: 39px;
+    padding: 8px;
+    font-size: 19px;
+    background-color: var(--bs-primary);
+    border: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+//   -----------Show Text-----------
+.ShowTextDivContainer {
+  // border: 2px solid red;
+  padding: 8px;
+  margin-top: 7px;
+}
+
+.FontsCategorie {
+  margin: 6px 0;
+  padding: 6px;
+}
+.FontsCategorie {
+  h2,
+  h3,h4,h5{
+    color: var(--red);
+    font-size: 28px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--bs-light);
+    padding: 10px;
+    border-left: 8px solid var(--yellow);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    @media screen and (max-width: 450px) {
+      font-size: 22px;
+    }
+  }
+}
+
+.SingleFonts {
+  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 16px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .Font {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    display: inline-block;
+    width: 80%;
+    outline: none;
+    padding: 4px 6px;
+    border: 0;
+    padding: 4px;
+    @media screen and (max-width: 450px) {
+      font-size: 1rem;
+    }
+  }
+  .Copy {
+    display: flex;
+    // border: 1px solid var(--bs-red);
+    color: #fff;
+    padding: 6px;
+    cursor: pointer;
+    background-color: var(--bs-gray-900);
+    border-radius: 3px;
+
+    svg {
+      pointer-events: none;
+      fill: #fff;
+    }
+
+    transition: .3s;
+
+    &:hover {
+      animation: pulse 1s infinite;
+      transition: .3s;
+    }
+
+  }
+
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(.9);
+    }
+      100% {
+      transform: scale(1);
+    }
+  }
+  // ----Decorate
+  .Decorate {
+    margin-left: 3px;
+    a {
+      background: var(--bs-blue);
+      padding: 6px;
+      border-radius: 3px;
+      color: var(--bs-light);
+    }
+  }
+
+  .CopiedMsg {
+    position: absolute;
+    left: 5%;
+    top: -40px;
+    background-color: var(--bs-primary);
+    padding: 4px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+// ----------Sticy side tool
+.Sticy {
+  position: sticky;
+  top: 15px;
+  right: 0;
+
+  @media screen and (max-width: 800px) {
+    position: static;
+  }
+}
+
+.Content {
+  h2,
+  h3 {
+    color: var(--bs-dark);
+    font-size: 26px;
+    @media screen and (max-width: 450px) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    padding-left: 5px;
+    a {
+      color: var(--bs-blue);
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 17px;
+    }
+  }
+
+  .HomeImg {
+    img {
+      margin-top: 8px;
+      border-radius: 25px;
+      width: 95%;
+    }
+  }
+  .Ul {
+    li {
+      font-size: 22px;
+      list-style: none;
+
+      span {
+        color: var(--bs-secondary);
+        font-size: 15px;
+      }
+      &::before {
+        content: "\2022";
+        color: var(--bs-blue);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+}
+
+.Howto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.SingleHowTo {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 300px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--bs-light);
+  background-color: var(--bs-dark);
+  h4 {
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7px;
+
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+  }
+  p {
+    margin-left: 44px;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 18px;
+  }
+  svg {
+    position: relative;
+    top: 10px;
+    fill: var(--bs-light);
+    right: 5px;
+  }
+}
+.Left{
+  padding: 20px;
+  // display: flex;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+  margin: 20px auto;
+
+      width: 99%;
+
+  
+  h3,h2,h4,h5,h6{
+      font-size: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--bs-gray-800);
+      // text-align: center;
+      @media screen and (max-width:590px) {
+          font-size: 22px;
+      }
+  }
+
+  p{
+      font-size: 18px;
+      // width:900px;
+      padding: 8px;
+      line-height: 26px;
+      color: var(--bs-gray-900);
+    
+  }
+
+  ul{
+      li{
+          margin: 7px 0;
+font-size: 17px;
+line-height: 25px;
+          b{
+              margin-right: 6px;
+              font-size: 18px;
+              color: var(--bs-gray-800);
+          }
+      }
+  }
+}

@@ -30,11 +30,22 @@ const {nightMode,setNightMode} = context;
                   <a href="https://randompickerwheel.com/yes-or-no">Yes or No Wheel</a>
                 </li>
             
+
+                <li>
+                  <a href="https://myfancytext.com/upside-down-text/">Upside Down text</a>
+                </li>
+                <li>
+                  <a href="https://imagecompresser.com/">Image Compressor</a>
+                </li>
          
 
                 <li>
             
             <a href="https://myfancytext.com/" title="Stylish Text Generator">Generate Stylish Text</a>
+          </li>
+                <li>
+            
+            <Link href={"/fancy-text"}>Italic Text</Link>
           </li>
 
            

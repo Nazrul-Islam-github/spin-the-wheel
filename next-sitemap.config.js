@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-    siteUrl: 'https://randompickerwheel.com',
+    siteUrl: 'https://randomspinwheel.pages.dev/',
     generateRobotsTxt: true, // (optional)
 
 }
